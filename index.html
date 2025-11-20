@@ -1,0 +1,200 @@
+<!--
+Project: Freelancer - Ad Data API Website
+Files included in this single HTML document bundle (copy each section into separate files):
+  - index.html        (Home)
+  - services.html     (Services / APIs)
+  - contact.html      (Contact / Request a Quote)
+
+Preview: save each section into files with the filenames above and open index.html in a browser.
+-->
+
+<!-- file: index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Ad Data APIs — Freelancer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta
+      name="description"
+      content="Freelancer who fetches ads & related data using APIs (Google Ads, Meta, Amazon, Bing)."
+    />
+  </head>
+  <body class="antialiased bg-slate-50 text-slate-800">
+    <header class="bg-white shadow">
+      <div
+        class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between"
+      >
+        <a href="index.html" class="flex items-center gap-3">
+          <div
+            class="w-10 h-10 bg-gradient-to-tr from-indigo-500 to-sky-400 rounded-lg flex items-center justify-center text-white font-bold"
+          >
+            AD
+          </div>
+          <div>
+            <h1 class="text-lg font-semibold">Ad Data APIs</h1>
+            <p class="text-xs text-slate-500">Fetch. Aggregate. Analyze.</p>
+          </div>
+        </a>
+
+        <nav class="space-x-4 text-sm">
+          <a href="index.html" class="text-slate-700 hover:text-indigo-600"
+            >Home</a
+          >
+          <a href="services.html" class="text-slate-700 hover:text-indigo-600"
+            >Services</a
+          >
+          <a href="contact.html" class="text-slate-700 hover:text-indigo-600"
+            >Contact</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-12">
+      <section class="grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h2 class="text-3xl font-extrabold leading-tight">
+            Get reliable ads data from major ad platforms — without the hassle.
+          </h2>
+          <p class="mt-4 text-slate-600">
+            I connect to Google Ads, Meta (Facebook/Instagram), Amazon Ads,
+            Microsoft Advertising and other APIs to fetch campaign, performance
+            and creative data, then deliver it in CSV, Sheets, or a custom
+            dashboard.
+          </p>
+
+          <ul class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <li class="bg-white p-3 rounded-lg shadow-sm border">
+              ✅ Google Ads (Campaigns, Keywords, Metrics)
+            </li>
+            <li class="bg-white p-3 rounded-lg shadow-sm border">
+              ✅ Meta Ads (Ad Sets, Creatives, Insights)
+            </li>
+            <li class="bg-white p-3 rounded-lg shadow-sm border">
+              ✅ Amazon Ads (Sponsored Products, Reports)
+            </li>
+            <li class="bg-white p-3 rounded-lg shadow-sm border">
+              ✅ Microsoft / Bing Ads
+            </li>
+          </ul>
+
+          <div class="mt-6 flex gap-3">
+            <a
+              href="contact.html"
+              class="inline-block bg-indigo-600 text-white px-5 py-3 rounded-lg shadow hover:bg-indigo-700"
+              >Request a Quote</a
+            >
+            <a
+              href="services.html"
+              class="inline-block border border-indigo-600 text-indigo-600 px-5 py-3 rounded-lg hover:bg-indigo-50"
+              >See Services</a
+            >
+          </div>
+        </div>
+
+        <div>
+          <div
+            class="bg-gradient-to-tr from-white to-indigo-50 p-6 rounded-2xl shadow-lg"
+          >
+            <h3 class="text-xl font-semibold mb-4">How it works</h3>
+            <ol class="list-decimal list-inside space-y-3 text-slate-700">
+              <li>Tell me which accounts & metrics you need.</li>
+              <li>
+                I connect via official APIs (or ingest CSVs) and fetch the data
+                regularly.
+              </li>
+              <li>
+                Receive clean CSV, Google Sheet, or a custom JSON endpoint for
+                your systems.
+              </li>
+            </ol>
+
+            <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div class="p-3 bg-white rounded-lg border">
+                Delivery: CSV / Sheets / JSON
+              </div>
+              <div class="p-3 bg-white rounded-lg border">
+                Scheduling: Daily / Weekly / On-demand
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="mt-6 p-4 text-sm text-slate-600 bg-white rounded-lg border"
+          >
+            <strong>Note:</strong> I use OAuth & official SDKs where possible.
+            No password-sharing required — accounts remain secure.
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-12">
+        <h3 class="text-2xl font-semibold">Sample Deliverables</h3>
+        <div class="mt-4 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="bg-white p-4 rounded-lg shadow-sm border">
+            <h4 class="font-medium">Campaign Performance CSV</h4>
+            <p class="text-sm text-slate-500 mt-2">
+              Daily metrics per campaign (impr, clicks, cost, conversions).
+            </p>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow-sm border">
+            <h4 class="font-medium">Ad Creative Inventory</h4>
+            <p class="text-sm text-slate-500 mt-2">
+              List of creatives, thumbnails, and landing URLs.
+            </p>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow-sm border">
+            <h4 class="font-medium">Keyword / Search Terms</h4>
+            <p class="text-sm text-slate-500 mt-2">
+              Top search terms, match types, and conversions.
+            </p>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow-sm border">
+            <h4 class="font-medium">Custom Dashboard Endpoint</h4>
+            <p class="text-sm text-slate-500 mt-2">
+              A JSON endpoint that your BI tool can poll.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-12 grid md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-sm border">
+          <h5 class="font-semibold">Pricing</h5>
+          <p class="text-sm text-slate-600 mt-2">
+            Starting at <span class="font-medium">₹5,000</span> / one-time for
+            small projects. Monthly retainer options available.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm border">
+          <h5 class="font-semibold">Turnaround</h5>
+          <p class="text-sm text-slate-600 mt-2">
+            Prototype within 3–5 business days. Production-onboarding depends on
+            platform access.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm border">
+          <h5 class="font-semibold">Security</h5>
+          <p class="text-sm text-slate-600 mt-2">
+            OAuth, scoped tokens, and least-privilege access. I never store raw
+            account passwords.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-white border-t">
+      <div
+        class="max-w-6xl mx-auto px-6 py-6 flex flex-col sm:flex-row justify-between items-center gap-4"
+      >
+        <p class="text-sm text-slate-600">© 2025 Ad Data APIs — Freelancer</p>
+        <div class="flex gap-4">
+          <a href="contact.html" class="text-sm text-indigo-600">Contact</a>
+          <a href="services.html" class="text-sm text-indigo-600">Services</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
