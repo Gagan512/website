@@ -6,6 +6,23 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Contact — Ad Data APIs</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Event snippet for Page view conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-17746175398/6KfgCLmUvcMbEKbLhI5C',
+          'event_callback': callback
+      });
+      return false;
+    }
+    </script>
+
   </head>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17746175398"></script>
@@ -117,4 +134,5 @@
     </footer>
   </body>
 </html>
+
 
