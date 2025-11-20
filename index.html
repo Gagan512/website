@@ -20,6 +20,23 @@ Preview: save each section into files with the filenames above and open index.ht
       name="description"
       content="Freelancer who fetches ads & related data using APIs (Google Ads, Meta, Amazon, Bing)."
     />
+    <!-- Event snippet for Page view conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-17746175398/6KfgCLmUvcMbEKbLhI5C',
+          'event_callback': callback
+      });
+      return false;
+    }
+    </script>
+
   </head>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17746175398"></script>
@@ -207,4 +224,5 @@ Preview: save each section into files with the filenames above and open index.ht
     </footer>
   </body>
 </html>
+
 
